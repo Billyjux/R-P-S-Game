@@ -9,13 +9,13 @@ let result;
 possibleChoices.forEach(possibleChoices => possibleChoices.addEventListener('click', (e) => {
     userChoice = e.target.id;
     if (userChoice === 'rock') {
-        userChoiceDisplay.setAttribute('src' , './image/img1.PNG');
+        userChoiceDisplay.setAttribute('src' , './image/img1.png');
     }   
     if (userChoice === 'paper') {
-        userChoiceDisplay.setAttribute('src' , './image/img2.PNG');
+        userChoiceDisplay.setAttribute('src' , './image/img2.png');
     }
     if (userChoice === 'scissors') {
-        userChoiceDisplay.setAttribute('src' , './image/img3.PNG');
+        userChoiceDisplay.setAttribute('src' , './image/img3.png');
     }
     generateComputerChoice();
     getResult();
@@ -34,7 +34,7 @@ function generateComputerChoice(){
     if (randomNumber === 3) {
         computerChoice = 'scissors';
     }
-    computerChoiceDisplay.setAttribute('src' , './image/img'+randomNumber+'.PNG');
+    computerChoiceDisplay.setAttribute('src' , './image/img'+randomNumber+'.png');
 }
      
 function getResult(){
